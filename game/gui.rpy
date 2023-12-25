@@ -29,14 +29,14 @@ define config.check_conflicting_properties = True
 define gui.accent_color = '#00cc99'
 
 ## Цвет, используемый в текстовой кнопке, когда она не выбрана и не наведена.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#4b4b3f'
 
 ## Small_color используется в маленьком тексте, который должен быть ярче/темнее,
 ## для того, чтобы выделяться.
 define gui.idle_small_color = '#aaaaaa'
 
 ## Цвет, используемых в кнопках и панелях, когда они наведены.
-define gui.hover_color = '#66e0c1'
+define gui.hover_color = '#7c796c'
 
 ## Цвет, используемый текстовой кнопкой, когда она выбрана, но не наведена.
 ## Кнопка может быть выбрана, если это текущий экран или текущее значение
@@ -65,7 +65,7 @@ define gui.text_font = "SegoePrintRegular.ttf"
 define gui.name_text_font = "TimesNewRomanRegular.ttf"
 
 ## Шрифт, используемый текстом вне игры.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "SegoePrintRegular.ttf"
 
 ## Размер нормального текста диалога.
 define gui.text_size = 28
@@ -216,8 +216,8 @@ define gui.choice_button_borders = Borders(150, 8, 150, 8)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = '#888888'
-define gui.choice_button_text_hover_color = "#ffffff"
+define gui.choice_button_text_idle_color = '#ff0000'
+define gui.choice_button_text_hover_color = "#5900ff"
 define gui.choice_button_text_insensitive_color = '#8888887f'
 
 
@@ -391,7 +391,7 @@ define gui.nvl_name_xalign = 1.0
 
 ## Местоположение, ширина и выравнивание диалогового текста.
 define gui.nvl_text_xpos = 450
-define gui.nvl_text_ypos = 180
+define gui.nvl_text_ypos = 220
 define gui.nvl_text_width = 885
 define gui.nvl_text_xalign = 0.0
 
@@ -403,8 +403,9 @@ define gui.nvl_thought_width = 1170
 define gui.nvl_thought_xalign = 0.0
 
 ## Местоположение кнопок меню NVL.
-define gui.nvl_button_xpos = 675
-define gui.nvl_button_xalign = 0.0
+define gui.nvl_button_xpos = 960
+define gui.nvl_button_ypos = 707
+define gui.nvl_button_xalign = 0.5
 
 
 ## Локализация #################################################################
@@ -479,5 +480,5 @@ init python:
         gui.nvl_thought_width = 1860
         gui.nvl_thought_xpos = 30
 
-        gui.nvl_button_width = 1860
+        gui.nvl_button_width = 100
         gui.nvl_button_xpos = 30

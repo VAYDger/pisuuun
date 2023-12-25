@@ -219,7 +219,7 @@ style choice_button_text is button_text
 
 style choice_vbox:
     xalign 0.5
-    ypos 850
+    ypos 1500
     yanchor 0.5
 
     spacing gui.choice_spacing
@@ -246,7 +246,7 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.5
+            xalign 1.0
             yalign 1.0
 
             textbutton _("Назад") action Rollback()
@@ -1399,6 +1399,7 @@ style nvl_thought:
 style nvl_button:
     properties gui.button_properties("nvl_button")
     xpos gui.nvl_button_xpos
+    ypos gui.nvl_button_ypos
     xanchor gui.nvl_button_xalign
 
 style nvl_button_text:
