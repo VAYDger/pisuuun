@@ -219,7 +219,7 @@ style choice_button_text is button_text
 
 style choice_vbox:
     xalign 0.5
-    ypos 850
+    ypos 1500
     yanchor 0.5
 
     spacing gui.choice_spacing
@@ -249,8 +249,6 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Назад") action Rollback()
-            textbutton _("История") action ShowMenu('history')
             textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Авто") action Preference("auto-forward", "toggle")
             textbutton _("Сохранить") action ShowMenu('save')
@@ -1399,6 +1397,7 @@ style nvl_thought:
 style nvl_button:
     properties gui.button_properties("nvl_button")
     xpos gui.nvl_button_xpos
+    ypos gui.nvl_button_ypos
     xanchor gui.nvl_button_xalign
 
 style nvl_button_text:
