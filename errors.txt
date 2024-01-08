@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 54: expected end of line
-    window hide with dissolve
-                ^
+File "game/screens.rpy", line 106: 'hide' is not a keyword argument or valid child of the screen statement.
+    hide "bookmark1_enabled"
+        ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Thu Dec 21 06:16:04 2023
+Mon Jan  8 23:19:14 2024
