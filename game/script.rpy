@@ -32,6 +32,7 @@ label start:
     show text "{size=+8}{font=TimesNewRomanRegular.ttf}{i}Пролог{/i}{/font}{/size}":
         xpos 555 yalign 0.145
     show polar
+    show screen bookmark1_disabled
     show ph1 behind polar
     show bgpolar behind ph1
     with dissolve
@@ -62,7 +63,7 @@ define menu = nvl_menu
 
 menu:   
 
-    "хуй":
+    "{image=arrow_left}хуй{image=arrow_right}":
         hide text
         hide polar
         hide bgpolar
@@ -75,7 +76,7 @@ menu:
         pause 0.5
         jump choise1
     
-    "пенис":
+    "{image=arrow_left}пенис{image=arrow_right}":
         hide text
         hide polar
         hide bgpolar
