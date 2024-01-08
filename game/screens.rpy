@@ -7,7 +7,7 @@ init offset = -1
 
 ################################################################################
 ## Стили
-################################################################################
+################################################################################"
 
 style default:
     properties gui.text_properties()
@@ -93,6 +93,44 @@ style frame:
 ## применить к ним настройки стиля.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
+
+transform bookmark:
+    on show:
+        xoffset 790
+        linear .4  xoffset -0
+    on hide:
+        xoffset -0 
+        linear .4  xoffset 790
+
+screen bookmark1_disabled():
+    frame:
+        xpos 1600 ypos 50
+        background "bookmark.png"
+        has hbox
+
+    imagebutton:
+        xpos 1750 ypos 65
+        idle "exit_icon.png"
+        hover "exit_icon_hover.png"
+        action [Show("bookmark1_enabled"), Hide("bookmark1_disabled")]
+
+screen bookmark1_enabled():
+    frame at bookmark:
+        xpos 810 ypos 50
+        background "bookmark.png"
+        has hbox
+
+        grid 5 1:
+            spacing 100
+            imagebutton:
+                xpos 150 ypos 15
+                idle "exit_icon.png"
+                hover "exit_icon_hover.png"
+                action [Hide("bookmark1_enabled"), Show("bookmark1_disabled")]
+            text "2"
+            text "3"
+            text "4"
+            text "5"
 
 screen say(who, what):
     style_prefix "say"
